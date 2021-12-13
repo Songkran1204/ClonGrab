@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bttStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="matchP">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="bttMenu">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="tvUnderMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="tvMode">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="btImagePromote">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="lnMega">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="bttArrow">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

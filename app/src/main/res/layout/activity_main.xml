@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/Grab"
+    tools:ignore="InvalidId">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/matchP">
+
+        <LinearLayout
+            style="@style/matchP"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/matchP"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#2C952C"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:weightSum="5">
+
+                    <ImageButton
+                        style="@style/matchP"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/scan"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+                    </ImageButton>
+
+                    <EditText
+                        style="@style/matchP"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="@string/chGrab"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <Button
+                        style="@style/bttStyle"
+                        android:drawableLeft="@drawable/search"
+                        android:text="@string/openBag">
+
+                    </Button>
+
+                    <Button
+                        style="@style/bttStyle"
+                        android:drawableLeft="@drawable/crown"
+                        android:text="@string/point" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        style="@style/matchP"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:drawableTop="@drawable/diet"
+                            android:text="@string/food" />
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:drawableTop="@drawable/vehicles"
+                            android:text="@string/transport" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/matchP"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:drawableTop="@drawable/market"
+                            android:text="@string/market" />
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:drawableTop="@drawable/coins"
+                            android:text="@string/pagket" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/matchP"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:drawableTop="@drawable/delivery"
+                            android:text="@string/fastDelivery" />
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:drawableTop="@drawable/card"
+                            android:text="@string/craditCard">>
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/matchP"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:background="@color/white"
+                            android:drawableTop="@drawable/tag"
+                            android:text="@string/promotion">></Button>
+
+                        <Button
+                            style="@style/bttStyle"
+                            android:drawableTop="@drawable/more"
+                            android:text="@string/other">>
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/matchP"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvMode"
+                            android:text="@string/fastbuy" />
+
+                        <ImageButton
+                            style="@style/bttArrow"
+                            android:src="@drawable/arrows">
+
+                        </ImageButton>
+                    </LinearLayout>
+
+
+                    <ImageButton
+                        style="@style/btImagePromote"
+                        android:src="@drawable/content"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </ImageButton>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/matchP"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvMode"
+                            android:text="@string/menuForYou" />
+
+                        <ImageButton
+                            style="@style/bttArrow"
+                            android:src="@drawable/arrows">
+
+                        </ImageButton>
+                    </LinearLayout>
+
+
+
+                        <LinearLayout
+                            style="@style/matchP"
+                            android:layout_width="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                ></androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/matchP"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvMode"
+                            android:text="@string/empty_food" />
+
+                        <ImageButton
+                            style="@style/bttArrow"
+                            android:src="@drawable/arrows">
+
+                        </ImageButton>
+                    </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/matchP"
+                            android:orientation="horizontal">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/recyclerMenuForYou"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="16dp"
+                                >
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/matchP"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/tvMode"
+                                android:text="@string/educateOther" />
+
+                            <ImageButton
+                                style="@style/bttArrow"
+                                android:src="@drawable/arrows">
+
+                            </ImageButton>
+                        </LinearLayout>
+
+                        <ImageButton
+                            style="@style/btImagePromote"
+                            android:src="@drawable/content"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </ImageButton>
+
+                        <TextView
+                            style="@style/tvMode"
+                            android:text="@string/mega_sale_60" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout style="@style/lnMega">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
+
+                                    <ImageButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/salad"></ImageButton>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="150dp"
+                                        android:text="ลดเพิ่ม 30 % ใส่รหัสMEGA 30"></TextView>
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/lnMega">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/salad" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="ลดเพิ่ม 30 % ใส่รหัสMEGA 30" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout style="@style/lnMega">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/salad"></ImageButton>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="DDDDDD"></TextView>
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/lnMega">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/salad" />
+
+                                <TextView
+                                    style="@style/matchP"
+                                    android:text="ลดเพิ่ม 30 % ใส่รหัสMEGA 30" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/tvMode"
+                        android:text="@string/lowPrice" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout style="@style/lnMega">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/salad"></ImageButton>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="DDDDDD"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/lnMega">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/salad" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="ลดเพิ่ม 30 % ใส่รหัสMEGA 30" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="vertical"></LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/matchP"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/matchP"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            app:menu="@menu/bottom_navigation_menu" />
+    </LinearLayout>
+
+</RelativeLayout>

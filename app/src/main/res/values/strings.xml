@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Grab</string>
+    <string name="fastbuy">สั่งเลย</string>
+    <string name="openBag">เปิดใช้งานกระเป๋า</string>
+    <string name="point">0 Point</string>
+    <string name="food">อาหาร</string>
+    <string name="transport">เดินทาง</string>
+    <string name="market">ร้านค้า</string>
+    <string name="pagket">แพ็กเกจ</string>
+    <string name="fastDelivery">ส่งด่วน</string>
+    <string name="craditCard">บัตรกำนัล</string>
+    <string name="promotion">โปรโมชัน</string>
+    <string name="other">เพิ่มเติม</string>
+    <string name="menuForYou">เมนูสำหรับคุณ</string>
+    <string name="chGrab">ค้นหาในแอป Grab</string>
+    <string name="empty_food">สั่งของว่างจาก</string>
+    <string name="educateOther">ศึกษาเพิ่มเติม</string>
+    <string name="mega_sale_60">MEGA SALE ลดสูงสุด 60%</string>
+    <string name="lowPrice">ร้านลดแล้ว เราลดให้อีก</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
