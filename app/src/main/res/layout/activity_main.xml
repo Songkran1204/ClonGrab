@@ -81,6 +81,7 @@
                         android:weightSum="2">
 
                         <Button
+                            android:id="@+id/bttFood"
                             style="@style/bttStyle"
                             android:drawableTop="@drawable/diet"
                             android:text="@string/food" />
@@ -415,7 +416,6 @@
         style="@style/matchP"
         android:gravity="bottom"
         android:orientation="vertical">
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"

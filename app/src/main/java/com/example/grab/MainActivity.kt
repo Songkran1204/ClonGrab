@@ -1,9 +1,13 @@
 package com.example.grab
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.grab.R.id.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var newRecylerview: RecyclerView
@@ -12,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var newArryList1: ArrayList<Menus>
     lateinit var foodname:Array<String>
     lateinit var price:Array<String>
+    lateinit var description:Array<String>
     lateinit var imageId:Array<Int>
 
     lateinit var foodnameForYou:Array<String>
@@ -25,21 +30,18 @@ class MainActivity : AppCompatActivity() {
             "ไข่ดาว",
             "ข้าวผัด",
             "คะน้า",
-            "EMM"
         )
         imageId= arrayOf(
             R.drawable.hamburger,
             R.drawable.diet,
             R.drawable.delivery,
             R.drawable.market,
-            R.drawable.hamburger,
         )
         price= arrayOf(
             "฿15",
             "฿16",
             "฿88",
             "฿20",
-            "฿200",
         )
 
         foodnameForYou= arrayOf(
@@ -60,29 +62,43 @@ class MainActivity : AppCompatActivity() {
             "฿88",
             "฿20",
         )
-
-        newRecylerview=findViewById(R.id.recyclerMenu)
-        newRecylerview.layoutManager= LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
-        newRecylerview.setHasFixedSize(true)
-//
-
-        newRecylerview1=findViewById(R.id.recyclerMenuForYou)
-        newRecylerview1.layoutManager= LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
-        newRecylerview1.setHasFixedSize(true)
-
+        description= arrayOf(
+            "AAAAAAAA",
+            "BBBBBBBBB",
+            "CCCCCCCC",
+            "DDDDDDD",
+        )
         newArryList= arrayListOf<Menus>()
         newArryList1= arrayListOf<Menus>()
+        newRecylerview=findViewById(recyclerMenu)
+        newRecylerview1=findViewById(recyclerMenuForYou)
+        MenuRecyclerView(newRecylerview)
+        MenuRecyclerView(newRecylerview1)
         getUserData()
+
+
+        val bttFood:Button=findViewById(bttFood)
+        bttFood.setOnClickListener {
+                val Intent =Intent(this,ListMenu::class.java)
+                startActivity(Intent)
+
+        }
+    }
+
+    private fun MenuRecyclerView(recyclerView: RecyclerView){
+        recyclerView.layoutManager= LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
+        recyclerView.setHasFixedSize(true)
+
     }
     private fun getUserData(){
         for (i in foodname.indices){
-            val news=Menus(imageId[i],foodname[i], price[i])
+            val news=Menus(imageId[i],foodname[i], price[i], description[i])
             newArryList.add(news)
 
         }
 
         for (i in foodnameForYou.indices){
-            val news=Menus(imageIdForYou[i],foodnameForYou[i], priceForYou[i])
+            val news=Menus(imageIdForYou[i],foodnameForYou[i], priceForYou[i], description[i])
             newArryList1.add(news)
 
         }
