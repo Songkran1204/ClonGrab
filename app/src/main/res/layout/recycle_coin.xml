@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/tvIconCoin"
+            style="@style/bttMenu"
+            android:src="@drawable/coins">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coin_id"
+                style="@style/tvUnderMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="id"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/coin_name"
+                style="@style/tvUnderMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/coin_price"
+                style="@style/tvUnderMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"
+                tools:ignore="MissingConstraints"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

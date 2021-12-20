@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="100dp"
+
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
@@ -18,43 +19,58 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_margin="20dp"
                 android:id="@+id/imageView"
-                style="@style/tvUnderMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="20dp"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="2dp"
                 tools:layout_editor_absoluteY="0dp"
                 tools:srcCompat="@tools:sample/avatars" />
+
             <LinearLayout
-                android:layout_margin="20dp"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/textView6"
-                    style="@style/tvUnderMenu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
+
+                    android:id="@+id/namefoods"
                     style="@style/tvUnderMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/prices"
+                    style="@style/tvUnderMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="textStart" />
 
             </LinearLayout>
 
         </LinearLayout>
+
         <TextView
-            android:layout_margin="20dp"
-            android:id="@+id/textView4"
+            style="@style/tvUnderMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginLeft="20dp"
+            android:text="Description"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="TextView"
+            android:textColor="@color/black" />
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

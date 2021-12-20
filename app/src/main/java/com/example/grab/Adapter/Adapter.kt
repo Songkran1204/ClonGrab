@@ -1,4 +1,4 @@
-package com.example.grab
+package com.example.grab.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.grab.Model.Menus
+import com.example.grab.R
 
 class Adapter(private val newList: ArrayList<Menus>):RecyclerView.Adapter<Adapter.MyViewHolder>(){
 
@@ -16,7 +18,7 @@ class Adapter(private val newList: ArrayList<Menus>):RecyclerView.Adapter<Adapte
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val itemView=LayoutInflater.from(parent.context).inflate(R.layout.list_menu,parent,false)
+        val itemView=LayoutInflater.from(parent.context).inflate(R.layout.recycle_list_menu_main,parent,false)
         return MyViewHolder(itemView)
     }
 
